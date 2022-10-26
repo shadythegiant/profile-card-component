@@ -1,0 +1,123 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 0.1px);
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  background-color: #fff;
+  height: 100%;
+  max-width: 350px;
+  border-radius: 0.635rem;
+}
+
+.img-sec img {
+  border-radius: 0.635rem 0.635rem 0 0;
+}
+
+.img-sec {
+  position: relative;
+}
+.profile-pic img {
+  width: 5rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -2rem;
+  transform: translateX(-50%);
+  border: 5px solid #fff;
+}
+
+.personal-info {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+h3 {
+  color: hsl(229, 23%, 23%);
+}
+
+.personal-info span {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+.personal-info p {
+  margin: 0.634rem;
+  color: hsl(227, 10%, 46%);
+  margin-bottom: 1.5rem;
+}
+
+.stats {
+  border: 0.5px solid hsl(227, 10%, 46%, 0.2);
+  padding: 2rem;
+}
+.stats ul {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+li {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  font-size: 1.3rem;
+  text-align: center;
+}
+li span {
+  font-weight: 400;
+  display: block;
+  font-size: 14px;
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 0.15rem;
+  margin-top: 0.3em;
+}
+
+
+/* background styling  */
+
+.back-top{
+    position:absolute;
+    top: -100%;
+    left: -30%;
+    z-index: -1;
+}
+
+
+.back-bottom{
+    position:absolute;
+    bottom: -100%;
+    right: -30%;
+    z-index: -1;
+}
+/* attrib */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
